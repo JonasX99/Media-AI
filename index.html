@@ -10,9 +10,16 @@
 <body>
 <h1>HEJ</h1>
 <audio
-src="media/soundtrack.mp3" >
-    
+controls
+src="media/soundtrack.mp3" id="sound" >
 </audio>
+
+<script>
+var lyd = document.getElementById("sound");
+function enableAutoplay() { 
+  lyd.autoplay = true;
+  
+</script>
 
 <script src="sketch.js"></script>
 
