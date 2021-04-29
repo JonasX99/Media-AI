@@ -1,10 +1,10 @@
 
-// var song = document.getElementById("sound"); 
+var song = document.getElementById("sound"); 
 
-// function playSong() { 
-//   song.play(); 
-// } 
+function playSong() { 
+  song.play(); 
+} 
 
-// function pauseSong() { 
-//   song.pause(); 
-// } 
+function pauseSong() { 
+  song.pause(); 
+} 
