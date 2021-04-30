@@ -10,28 +10,35 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <script src="PlayPause.js"></script>
-    <script src="sketch.js"></script>
+    <div class="video"><script src="sketch.js"></script></div>
     <script src="AI.js" id="video"></script>
 </head>
 
 
 <body>
-    <h1>Media AI</h1>
+    <div class="grid-container">
 
-    <audio controls src="Musik/soundtrack.mp3" id="sound"></audio>
-    
-    <input onclick="AIButton()" type="button" value="Turn AI on" id="AIButton">
- 
-    <p>Welcome to Media AI, a program that can be used to turn on or off music, 
-        based on your presence behind the webcam. Just turn on your webcam, 
-        followed by the AI using the dedicated button. 
-        Now you can try to move out of frame to have 
-        the music automatically pause.</p>
+        <div class="top"><h1>Media AI</h1></div>
 
-    <p id="bund">This program was created as a school project, using the opensource AI <a href="https://teachablemachine.withgoogle.com/">teachable machine</a>, 
-        by Jonas, Ammar & Holger.
-    </p>
+        <div class="audio"><audio controls src="Musik/soundtrack.mp3" id="sound"></audio></div>
 
+        <div class="button"><input onclick="AIButton()" type="button" value="Turn AI on" id="AIButton"></div>
+
+        <div class="intro">
+            <p>Welcome to Media AI, a program that can be used to turn on or off music,
+                based on your presence behind the webcam. Just turn on your webcam,
+                followed by the AI using the dedicated button.
+                Now you can try to move out of frame to have
+                the music automatically pause.</p>
+        </div>
+
+        <div class="buttom">
+            <p id="bund">This program was created as a school project, using the opensource AI <a
+                    href="https://teachablemachine.withgoogle.com/">teachable machine</a>,
+                by Jonas, Ammar & Holger.
+            </p>
+        </div>
+    </div>
 
 </body>
 

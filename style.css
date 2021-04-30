@@ -67,3 +67,21 @@ p{
   a{
       color: grey;
   }
+
+
+  .top {grid-area: t;}
+  .audio {grid-area: te;}
+  .button{grid-area: tes}
+  .intro{grid-area: test}
+  .video{grid-area: tester}
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      't t t t'
+      'te te tes tes'
+      'test test tester tester'
+      'teste';
+    grid-gap: 10px 10px;
+    
+  }
