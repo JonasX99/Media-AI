@@ -48,8 +48,7 @@ p{
     color: #fff;
     background-color: #4CAF50;
     border: none;
-    border-radius: 15px;
-    box-shadow: 0 5px rgb(255, 255, 255);
+    border-radius: 100px;
   }
   
   #AIbutton:hover {background-color: #3e8e41}
