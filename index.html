@@ -1,7 +1,9 @@
+<!DOCTYPE html>
 <html>
 
 <head>
     <title>Media AI</title>
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
 
@@ -12,40 +14,34 @@
 
     <script src="PlayPause.js"></script>
     <script src="AI.js" id="video"></script>
-
-    <script src="sketch.js" id="video">
-    </script>
-
+    <script src="sketch.js"></script>
 
 </head>
 
 
 <body>
-        <div class="top"><h1>Media AI</h1></div>
+    <div class="top"><h1>Media AI</h1></div>
 
-        <div class="intro">
-            <p>Welcome to Media AI, a program that can be used to turn on or off music,
-                based on your presence behind the webcam. Just turn on your webcam,
-                followed by the AI using the dedicated button.
-                Now you can try to move out of frame to have
-                the music automatically pause.</p>
-        </div>
+    <div class="intro">
+        <p>
+            Welcome to Media AI, a program that can be used to turn on or off music,
+            based on your presence behind the webcam. Just turn on your webcam,
+            followed by the AI using the dedicated button.
+            Now you can try to move out of frame to have
+            the music automatically pause.
+        </p>
+    </div>
 
+    <div id="grid">
+        <input onclick="AIButton()" type="button" value="Turn AI on" id="AIButton">
+        <audio controls src="Musik/soundtrack.mp3" id="sound"></audio>
+    </div>
 
-        <div id="grid">
-            <input onclick="AIButton()" type="button" value="Turn AI on" id="AIButton">
-            <audio controls src="Musik/soundtrack.mp3" id="sound"></audio>
-        </div>
-
-        
-
-
-        <div class="buttom">
-            <p class="footer" id="bund">This program was created as a school project, using the opensource AI <a
-                    href="https://teachablemachine.withgoogle.com/">teachable machine</a>,
-                by Jonas, Ammar & Holger.
-            </p>
-        </div>
+    <p class="footer" id="bund">
+        This program was created as a school project, using the opensource AI 
+        <a href="https://teachablemachine.withgoogle.com/">teachable machine</a>,
+        by Jonas, Ammar & Holger.
+    </p>
 
 </body>
 
