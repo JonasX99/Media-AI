@@ -35,11 +35,11 @@
     image(flippedVideo, 0, 0);
 
     // Draw the label
-    
+    /*
     fill(255);
     textSize(16);
     textAlign(CENTER);
-    text(label, width / 2, height - 4);
+    text(label, width / 2, height - 4);*/
   }
 
   // Get a prediction for the current video frame
