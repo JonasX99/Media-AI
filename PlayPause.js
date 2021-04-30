@@ -1,5 +1,7 @@
 
-var result = results[0]
+var result = 'results[0]'
+let Play;
+let Pause;
 var song = document.getElementById("sound");
 
 function playSong() {
@@ -14,3 +16,5 @@ if (result == Play) {
 } else {
   pauseSong()
 }
+
+console.log(result)
