@@ -1,4 +1,7 @@
-let classifier;
+  //turn AI ON OFF Button
+  let AiOnOff = false;
+  
+  let classifier;
   // Model URL
   let imageModelURL = 'https://teachablemachine.withgoogle.com/models/KQf-sV4KB/';
   
@@ -14,7 +17,7 @@ let classifier;
   }
 
   function setup() {
-    createCanvas(320, 260);
+    createCanvas(320, 240);
     // Create the video
     video = createCapture(VIDEO);
     video.size(320, 240);
@@ -31,11 +34,11 @@ let classifier;
     image(flippedVideo, 0, 0);
 
     // Draw the label
-    /*
+    
     fill(255);
     textSize(16);
     textAlign(CENTER);
-    text(label, width / 2, height - 4);*/
+    text(label, width / 2, height - 4);
   }
 
   // Get a prediction for the current video frame
@@ -58,4 +61,17 @@ let classifier;
     label = results[0].label;
     // Classifiy again!
     classifyVideo();
+  }
+
+  function AIButton(){
+    //AiOnOff = !AiOnOff;
+    let button = document.getElementById("AIButton");
+    if(button.value=="Turn AI on")
+    {
+      button.value = "Turn AI off";
+    }
+    else
+    {
+      button.value = "Turn AI on";
+    }
   }
