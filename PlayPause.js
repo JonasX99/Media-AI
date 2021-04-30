@@ -1,8 +1,8 @@
 
-let song = document.getElementById("sound");
+
 
 function playSong() {
-  song.play();
+  document.getElementById("sound").play();
 }
 function pauseSong() {
   song.pause();
