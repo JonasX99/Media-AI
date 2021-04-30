@@ -16,19 +16,20 @@
     classifier = ml5.imageClassifier(imageModelURL + 'model.json');
   }
 
-  function setup() {
-    createCanvas(320, 240);
-    // Create the video
-    video = createCapture(VIDEO);
-    video.size(320, 240);
-    video.hide();
 
-    flippedVideo = ml5.flipImage(video);
-    // Start classifying
-    classifyVideo();
+  function setupAI(){
+        // Create the video
+        video = createCapture(VIDEO);
+        video.size(320, 240);
+        video.hide();
+    
+        flippedVideo = ml5.flipImage(video);
+        // Start classifying
+        classifyVideo();
   }
 
-  function draw() {
+
+  function setupAIDraw(){
     background(0);
     // Draw the video
     image(flippedVideo, 0, 0);
@@ -57,7 +58,7 @@
       return;
     }
     // The results are in an array ordered by confidence.
-    // console.log(results[0]);
+    //console.log(results[0]);
     label = results[0].label;
     // Classifiy again!
     classifyVideo();
@@ -75,3 +76,5 @@
       button.value = "Turn AI on";
     }
   }
+ 
+  
