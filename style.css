@@ -29,6 +29,7 @@ h1{
     border-style: solid;
     border-width: 5px;
     border-color: transparent;
+
 }
 
 p{
@@ -69,25 +70,13 @@ p{
   }
 
 
-  .top {grid-area: q;}
-  .audio {grid-area: w;}
-  .button{grid-area: e}
-  .intro{grid-area: r}
-  /* .buttom{grid-area: a} */
-  /* .p5Canvas{grid-area: t}
-  #defaultCanvas0{grid-area: t}
-  .video{grid-area: t} */
+  .top {}
+  .audio {}
+  .button{}
+  .intro{}
+ 
 
-  .grid-container {
-    display: grid;
-    /* grid-template-columns: 300px 100px 60px 60px;
-    grid-template-rows: 60px 60px 60px 60px; */
-    grid-template-areas:
-      'q q'
-      'e w'
-      't t'
-      'r r';
-  }
+ 
 
   .footer {
     position: fixed;
