@@ -14,7 +14,9 @@
 
     <script src="AI.js" id="video"></script>
 
-    <script src="sketch.js" id="video"></script>
+    <script src="sketch.js" id="video">
+    </script>
+
 
 </head>
 
@@ -30,11 +32,13 @@
                 the music automatically pause.</p>
         </div>
 
-        <div class="button"><input onclick="AIButton()" type="button" value="Turn AI on" id="AIButton"></div>
-        <div class="audio"><audio controls src="Musik/soundtrack.mp3" id="sound"></audio></div>
 
+        <div id="grid">
+            <input onclick="AIButton()" type="button" value="Turn AI on" id="AIButton">
+            <audio controls src="Musik/soundtrack.mp3" id="sound"></audio>
+        </div>
 
-
+        
 
 
         <div class="buttom">
