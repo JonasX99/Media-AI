@@ -68,14 +68,17 @@
     AIOnOff = !AIOnOff;
     console.log(AIOnOff)
     let button = document.getElementById("AIButton");
+    let sound = document.getElementById("sound")
     if(button.value=="Turn AI on")
     {
-      //button.style.color = "#000000"
+      button.style.backgroundColor = "#c72810"
+      sound.style.border = "solid #4CAF50"
       button.value = "Turn AI off";
     }
     else
     {
-      //button.style.color = "#FFFFFF"
+      button.style.backgroundColor = "#4CAF50"
+      sound.style.border = " solid #c72810"
       button.value = "Turn AI on";
     }
     //The reason to pause in this function is to run pause only 
