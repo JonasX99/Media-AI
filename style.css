@@ -69,19 +69,24 @@ p{
   }
 
 
-  .top {grid-area: t;}
-  .audio {grid-area: te;}
-  .button{grid-area: tes}
-  .intro{grid-area: test}
-  .video{grid-area: tester}
+  .top {grid-area: q;}
+  .audio {grid-area: w;}
+  .button{grid-area: e}
+  .intro{grid-area: r}
+  .buttom{grid-area: a}
+  /* .p5Canvas{grid-area: t}
+  #defaultCanvas0{grid-area: t}
+  .video{grid-area: t} */
 
   .grid-container {
     display: grid;
+    /* grid-template-columns: 300px 100px 60px 60px;
+    grid-template-rows: 60px 60px 60px 60px; */
     grid-template-areas:
-      't t t t'
-      'te te tes tes'
-      'test test tester tester'
-      'teste';
-    grid-gap: 10px 10px;
-    
+      'q q'
+      'e w'
+      't t'
+      'r r'
+      'a a';
+ 
   }
