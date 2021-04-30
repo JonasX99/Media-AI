@@ -1,5 +1,5 @@
   //turn AI ON OFF Button
-  let AiOnOff = false;
+  let AIOnOff = false;
   
   let classifier;
   // Model URL
@@ -65,7 +65,8 @@
   }
 
   function AIButton(){
-    //AiOnOff = !AiOnOff;
+    AIOnOff = !AIOnOff;
+    console.log(AIOnOff)
     let button = document.getElementById("AIButton");
     if(button.value=="Turn AI on")
     {
@@ -74,6 +75,9 @@
     else
     {
       button.value = "Turn AI on";
+    }
+    if(AIOnOff == false){
+      document.getElementById("sound").pause();
     }
   }
  
