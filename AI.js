@@ -72,19 +72,19 @@
     if(button.value=="Turn AI on")
     {
       button.style.backgroundColor = "#c72810"
-      sound.style.border = "solid #4CAF50"
+
       button.value = "Turn AI off";
     }
     else
     {
       button.style.backgroundColor = "#4CAF50"
-      sound.style.border = " solid #c72810"
+
       button.value = "Turn AI on";
     }
-    //The reason to pause in this function is to run pause only 
-    //once when the AI is off in order to let the user control.
+    //The reason to pause in this function is to run pause only once
     if(AIOnOff == false){
       document.getElementById("sound").pause();
+      sound.style.border = "solid #1e1e1e"
     }
   }
  
