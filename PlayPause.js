@@ -8,4 +8,3 @@ function pauseSong() {
   song.pause();
 }
 
-
