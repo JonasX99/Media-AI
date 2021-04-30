@@ -73,7 +73,7 @@ p{
   .audio {grid-area: w;}
   .button{grid-area: e}
   .intro{grid-area: r}
-  .buttom{grid-area: a}
+  /* .buttom{grid-area: a} */
   /* .p5Canvas{grid-area: t}
   #defaultCanvas0{grid-area: t}
   .video{grid-area: t} */
@@ -86,16 +86,15 @@ p{
       'q q'
       'e w'
       't t'
-      'r r'
-    'a a';
+      'r r';
   }
 
-  /* .footer {
+  .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: transparent;
     color: white;
-    text-align: center; */
+    text-align: center;
   }
