@@ -15,7 +15,7 @@ let label = "";
 function preload() {
   classifier = ml5.imageClassifier(imageModelURL + 'model.json');
 }
-
+//test
 
 function setupAI() {
   // Create the video
